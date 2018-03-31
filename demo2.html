@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            border: 1px solid red;
+            font-size: 25px;
+        }
+        span{
+            display: inline-block;
+            border: 1px solid green;
+            width: 110px;
+            text-align: justify;
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+        }
+        span::after{
+            content: '';
+            display: inline-block;
+            width: 100%;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <span>姓名</span><br>
+        <span>联系方式</span>
+    </div>
+</body>
+</html>
